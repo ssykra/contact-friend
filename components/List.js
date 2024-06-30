@@ -8,30 +8,34 @@ const List = ({navigation}) => {
       key: '1',
       gambar: require('../assets/dinda.jpg'),
       judul: 'Dinda Putri K',
+      kota: 'Sukabumi',
       telpon: '08xxxxxxxxx',
     },
     {
       key: '2',
       gambar: require('../assets/ruhu.png'),
       judul: 'Siti Ruhu Salamah',
-      telpon: '08xxxxxxxxx',
+      kota: 'Sukabumi',
+      telpon: '08xxxxxxxxx'
     },
     {
       key: '3',
       gambar: require('../assets/raina.jpg'),
       judul: 'Raina Rahmawati Fitri',
-      telpon: '08xxxxxxxxx',
+      kota: 'Sukabumi',
+      telpon: '08xxxxxxxxx'
     },
     {
       key: '4',
       gambar: require('../assets/zizah.png'),
       judul: 'Siti Nurazizah',
-      telpon: '08xxxxxxxxx',
+      kota: 'Sukabumi',
+      telpon: '08xxxxxxxxx'
     },
   ];
 
   const renderItem = ({item}) => (
-    <Contact gambar={item.gambar} judul={item.judul} telpon={item.telpon}/>
+    <Contact gambar={item.gambar} judul={item.judul} kota={item.kota} telpon={item.telpon}/>
   );
 
   return (

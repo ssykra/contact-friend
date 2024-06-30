@@ -7,6 +7,7 @@ export default function Contact(props) {
     <Image source={props.gambar} style={styles.image}/>
       <View style={styles.text}>
         <Text style={styles.title}>{props.judul}</Text>
+        <Text style={styles.kota}>{props.kota}</Text>
         <Text style={styles.telp}>{props.telpon}</Text>
       </View>
     </View>
@@ -30,6 +31,9 @@ const styles=StyleSheet.create({
   title:{
     fontWeight: 'bold',
     fontSize:16
+  },
+  kota:{
+    fontSize:14
   },
   telp:{
     fontSize:14,
